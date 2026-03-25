@@ -1,10 +1,297 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST_PROJECT_OF_HTML</title>
+    //-------------------icon title
+    <link rel="shortcut-icon" href="rohit.jpg" type="image/x-icon"/>
+    <link rel="stylesheet" href="css.css">
 </head>
+
 <body>
-    <h1>Hello Shubham 🔥</h1>
-    <p>My first live website 🚀</p>
+    <h1>
+        <marquee behavior="scroll" scrollamount="10" direction="" loop="" bgcolor="white" width="" height="">Breaking
+            news &nbsp; &nbsp; Breaking News &nbsp; &nbsp; Breaking News &nbsp; &nbsp; Breaking news &nbsp; &nbsp;
+            Breaking news &nbsp; &nbsp; Breaking news </marquee>
+    </h1>
+    <h1 align="center"><u><b><i>WELCOME TO MY WEB PAGE</i></b></u></h1>
+    <P>Lorem ipsum, <s>dolor</s> sit amet consectetur adipisicing elit. Ipsum dignissimos neque cum incidunt provident
+        assumenda voluptas beatae odio quos dolorum inventore, officiis deleniti ipsa accusantium earum commodi nemo
+        debitis blanditiis</P>
+    <a href="https://www.google.com/" target="_blank">Google</a><br />
+    <a href="programm.html" target="_blank">go to programm</a><br><br>
+    //-------------------font//horizental//
+    <p>
+        <font color="balck" size="5" face="impact"> Lorem ipsum dolor sit amet consectetur
+            <hr align="rigth" size="10" color="black" />
+        </font>
+    </p>
+    //-------------------order list
+    <ol type="A" ,"a","1","I","i">
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Mango</li>
+    </ol>
+    //-------------------unorder list
+    <ul type="square" ,"circle">
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Mango</li>
+        <li>Orange</li>
+    </ul>
+    //-------------------discription list
+    <dl>
+        <dt><b>Heading One</b></dt>
+        <dd>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, nihil.
+        </dd>
+
+        <dt><b>Heading Two</b></dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nihil similique ut commodi quae officia
+            architecto id, numquam dolores totam.
+        </dd>
+        <dt><b>Heading Three</b></dt>
+        <dd>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ipsum vero, eaque veritatis in ullam. Ipsam
+            voluptates doloremque, ipsum quae facilis exercitationem earum dolore molestiae explicabo, quibusdam
+            veritatis consequatur libero.
+        </dd>
+    </dl>
+    //-------------------image src <br> <br>
+    <img alt="Rohit Sharma " src="https://p.imgci.com/db/PICTURES/CMS/366600/366647.jpg" height="200" width="200" />
+
+    <br />
+    //-------------------mailto tag<br> <br>
+    <a href="mailto:xyz@gmail.com?cc=abc@gmail.com&bcc=hello@gmail.com&subject=Project Declaration&body=hii sir">click
+        mail option</a><br />
+    //-------------------anchor tag mailto <br> <br>
+    <a href="mailto:xyx@gmail.com?cc=abc@gmail.com&bcc=hello@gmail.com&subject=Project Declaration &body=dear sir,%0A%0A I am submitting my project declaration for your review. Please find the details attached.%0A%0A Kindly check and let me know if any changes are required.%0A%0AThank you.%0A%0ARegards,%0AShubham">send
+        mail</a>
+    <hr align="rigth" size="10" color="black" />
+    <br />
+    //-------------------table tag
+    <table border="1" cellpadding="10px" cellspacing="10px" width="400px" bgcolor="yellow">
+        <tr>
+            <th>Sr no</th>
+            <th>Student</th>
+            <th>Marks</th>
+        </tr>
+        <tr align="center">
+            <td>1</td>
+            <td>sagar</td>
+            <td>78%</td>
+        </tr>
+
+        <tr align="center">
+            <td>2</td>
+            <td>snehal</td>
+            <td>80%</td>
+        </tr>
+    </table>
+    <br />
+    //-------------------table tag
+    <table border="1" cellpadding="10px" cellspacing="" width="800px" bgcolor="orange">
+        <tr height="20px" bgcolor="yellow">
+            <th colspan="2">INFORMATION OF ROHIT SHARAMA<a href=""></th>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="pink">
+                <a href="">Google</a>&nbsp; &nbsp;
+                <a href="">Facebook</a>
+            </td>
+        </tr>
+        <tr height="100px">
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloribus error rem</td>
+            <td>ROHIT SIR</td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="blue">Contactus:-8600489900</td>
+        </tr>
+    </table>
+    <br />
+    //-------------------iframe_tag <br>
+    <iframe src="https://demoqa.com/links" frameborder="1" align="center" width="800px" height="400px"></iframe>
+    &nbsp; &nbsp;
+    <br />
+    //-------------------audio_tag <br /> <br />
+    <audio controls>
+        <source src="audio/guzarish.mp3" type="audio/mpeg" />
+    </audio>
+
+    &nbsp; &nbsp;
+    <br />
+    //-------------------video_tag <br /> <br />
+    <video controls>
+        <source src="audio/guzarish.mp3" type="audio/mpeg" />
+    </video>
+    <br /> <br />
+    <br /> <br />
+    //-------------------NAME FORM <br /> <br />
+    <form action="" method="">
+        //-------------------form border <br> <br>
+        //-------------------title <br> <br>
+        <fieldset><br><br>
+
+            <legend><b>Enter Your Personal Details</b></legend>
+            //-------------------NAME <br><br>
+            <label for="">Name :</label> <input type="text" name="fname" value="" placeholder="Enter your name"><br />
+            //-------------------Mail <br><br>
+            <label for="">Mail</label><input type="text" name="Enter mail" value="" placeholder="Enter your mail"><br>
+            //-------------------Password FORM <br /> <br />
+            <label for="">Password :</label> <input type="password" name="" placeholder="Enter your password"></br>
+            //-------------------Gender FORM <br /> <br />
+            <label>Gender :</label> <input type="radio" name="gender" id="male"><label for="male">male</label><input
+                type="radio" name="gender" id="female"><label for="female">Female</label><br /><br />
+            //-------------------Hoobies FORM <br /> <br />
+            <label>Hoobies :</label><input type="checkbox" name="hobby" id="music"><label
+                for="music">music</label><input type="checkbox" name="hobby" id="football"><label
+                for="football">football</label><br><br>
+            //-------------------textarea MessageS <br /> <br />
+            <label>Message</label><textarea rows="10" cols="10"></textarea><br><br>
+            //-------------------select Country <br /> <br />
+            <label>Country</label> <select size="" multiple>
+                <option>india</option>
+                <option>Chiana</option>
+                <option>pakistan</option>
+                <option>Nepal</option>
+            </select> <br> <br>
+
+            //-------------------select optgroup <br /> <br />
+            <label>Cars</label><select>
+                <optgroup label="TATA">
+                    <option>punch</option>
+                    <option>NEXON</option>
+                    <option>SERRIA</option>
+                </optgroup>
+                <optgroup label="MAHINDRA">
+                    <option>Creta</option>
+                    <option>Thar</option>
+                    <option>Sacrpio</option>
+                </optgroup>
+            </select>
+            <br> <br>
+            //-------------------select datalist <br /> <br />
+            <label>froots</label> <select><input list="froots">
+                <datalist id="froots">
+                    <option value="Mango">
+                    <option value="Apple">
+                    <option value="Grapes">
+                </datalist>
+            </select>
+            <br> <br>
+            //-------------------UPLOAD FILE <br /> <br />
+            <label>Upload File</label> <input type="file" accept="" name="" /><br /> <br />
+
+            //-------------------submit button <br><br>
+            <input type="submit"> <br><br>
+
+            //-------------------button <br><br>
+            <input type="button" value="button"><br><br>
+
+            //-------------------reset button<br><br>
+            <input type="reset" value="reset"> <br><br>
+        </fieldset>
+        <br><br>
+        //-------------------select color <br> <br>
+        <label>select color</label> <input type="color" name=""> <br><br>
+
+        //-------------------select number<br> <br>
+        <label for="">Number</label> <input type="number" name="" min="1" max="10" step=""> <br><br>
+
+        //-------------------select range<br> <br>
+        <label for="">range</label> <input type="range" name="" min="1" max="100" step="10"> <br><br>
+
+        //-------------------select date<br> <br>
+        <label>date</label> <input type="date" name=""> <br><br>
+
+        //-------------------select datetime-local<br> <br>
+        <label for="">date-time</label><input type="datetime-local" name=""> <br><br>
+
+        //-------------------select month<br> <br>
+        <label>month</label> <input type="month" name=""> <br><br>
+
+        //-------------------select week<br> <br>
+        <label>week</label> <input type="week" name=""> <br><br>
+
+        //-------------------select time<br> <br>
+        <label>time</label> <input type="time" name=""> <br><br>
+
+        //-------------------select mail<br><br>
+        <label>Email</label> <input type="email" name=""> <br><br>
+
+        //------------------- select url<br><br>
+        <label for="">URL</label> <input type="url" name=""> <br><br>
+
+        //-------------------select search <br><br>
+        <label for="">Search</label> <input type="search" name=""> <br><br>
+
+        //-------------------select mobile<br><br>
+        <label>phone no</label> <input type="tel" name=""> <br><br>
+        <input type="submit">
+
+    </form>
+    <br><br>
+    //------------------- header Semantic Elements
+    <header>
+        SAMSUNG <br>
+        <img alt="rohit sharma Imgae" src="https://p.imgci.com/db/PICTURES/CMS/366600/366647.jpg" height="100"
+            width="200" />
+    </header><br>
+    //-------------------Navigation Semantic Elements
+    <nav>
+        <a href="shop">shop</a> &nbsp;
+        <a href="mobile">mobile</a>&nbsp;
+        <a href="tv">tv</a>&nbsp;
+        <a href="Appliances">Appliances</a>&nbsp;
+        <a href="computers&Moniters">computers&Moniters</a>
+    </nav><br>
+    //------------------- section Elements & article
+    <section>
+        <article>*Image simulated. Actual UX/UI may differ. Availability of colors may vary by country or carrier.
+            Products sold separately.<br>
+
+            *Samsung.com has upgraded. Everything you need to know about this upgrade. Learn more.<br>
+
+            *Images shown here are for representational purpose only, actual may vary. All features, specifications and
+            prices are subject to change without prior notice. Model availability may vary from location to
+            location.<br>
+
+            *Image simulated. Samsung account login may be required for certain AI features.</article>
+        <p>
+            *Image simulated. Actual UX/UI may differ. Availability of colours, sizes, models, and watch bands may vary
+            by country or carrier. Products sold separately. Running coach program is available on Android phones
+            (Android 10 or above) and requires Samsung Health app (v6.30.2 or above). Samsung account login required.
+            Service only available with Galaxy Watch8 Series or later released Galaxy Watch Series. To use running coach
+            program, user needs to take a running level test and get a level before starting the coach program.
+        <p>
+            //-------------------aside bar
+        <aside>
+            <p>This is a sidebar with related links.</p>
+        </aside>
+    </section>
+    //-------------------Footer Elements
+    <footer>
+
+        <a href="shop">shop</a>
+        <a href="Product">Product</a>
+        <a href="Account">Account</a><br>
+
+    </footer>
+    //-------------------Div block Elements
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dignissimos.
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores cupiditate consectetur neque,
+        facilis ipsum ab deserunt hic rerum inventore necessitatibus. Impedit odio ullam unde, maiores reiciendis
+        deleniti qui autem!</div>
+    </p>
+    //-------------------span Inline-Element
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, excepturi?<span>Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Mollitia adipisci dolore corrupti reiciendis natus placeat recusandae maxime
+            vitae quasi debitis voluptatem, tempore, impedit velit distinctio non quaerat unde facere labore.</span></p>
+        <label for="">Email</label> <input type="text" placeholder="Enter Email"></input>
+        <button>Submit</button>
 </body>
+
 </html>
