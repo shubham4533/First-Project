@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid3</title>
+    <style>
+        .container{
+            background:#0000ff;
+            width:700px;
+            height:700px;
+            margin:30px 0px 0px 30px;
+
+            display:grid;
+            grid-template-columns:repeat(2, 200px);
+            grid-template-rows:repeat(2, 150px);
+            grid-gap:15px 15px;
+            /*implict row*/
+            grid-auto-rows:90px;
+
+             /* //alignment--align+justify=place// */
+
+            /* align-items:center; */
+            /* justify-items:center; */
+             /* place-items:center center; */
+
+            /* <---> start(by deafault value),end,ceter,stretch space-around, space-between, space-evenly  */
+            justify-content:space-evenly;
+
+             /* start end center stretch space-around, space-between, space-evenly up rigth down left ni space dayach asel tr use kartat*/
+            align-content:space-evenly;
+
+
+        }
+        .item1{
+            background:red;
+
+            /* //alignment--align+justify=place// */
+
+            /* align-self:center; */
+            /* justify-self:center; */
+            /* place-self:center start; */
+        }
+        .item2{
+            background:blueviolet;
+        }
+        .item3{
+
+            background:yellow;
+        }
+        .item4{
+            background:green;
+        }
+        .item5{
+            background:saddlebrown;
+        }
+        .item6{
+            background:purple;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item1">ONE</div>
+        <div class="item2">TWO</div>
+        <div class="item3">THREE</div>
+        <div class="item4">FOUR</div>
+        <div class="item5">FIVE</div>
+        <div class="item6">SIXS</div>
+    </div>
+</body>
+</html>

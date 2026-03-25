@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        .container{
+            background:ghostwhite;
+            width:500px;
+            margin:10px 10px auto 0;
+            padding:10px 20px 20px 40px;
+            border:solid red 2px;
+
+          
+
+            display:flex;
+            /* flex-direction:column;
+            flex-direction:column-reverse;
+            flex-direction:row;
+            flex-direction:row-reverse;  */
+
+            flex-direction:row;
+            flex-wrap:wrap-reverse;      /* //wrap nowrap wraprevers// */
+            grid-column-gap:10px;
+            justify-content:space-between; /* //center end start space-evenly   space-around// */
+
+
+        }
+        .text1{
+            background:rebeccapurple;
+        }
+        .text2{
+            background:green;
+        }
+        .text3{
+            background:red;
+        }
+        .text4{
+            background:purple;
+        }
+        .text5{
+            background:thistle;
+        }
+        .text6{
+            background:teal;
+        }
+        .text7{
+            background:tomato;
+        }
+        .text8{
+            background:mediumorchid;
+        }
+        .texts{
+            color:black;
+            font-size: 20px;
+            font-weight:bold;
+            text-align: center;
+            padding:10px;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text1">Apple</div>
+        <div class="text2">Grapes</div>
+        <div class="text3">Mango</div>
+        <div class="text4">Banana</div>
+        <div class="text5">first</div>
+        <div class="text6">second</div>
+        <div class="text7">third</div>
+        <div class="text8">fourth</div>
+       
+         
+    </div>
+</body>
+</html>
+
+<!-- Flexbox म्हणजे CSS मधील एक layout system आहे ज्यामुळे elements row किंवा column मध्ये easily arrange करता येतात.
+Responsive design बनवण्यासाठी Flexbox खूप वापरला जातो. -->

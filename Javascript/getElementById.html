@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+    <script>
+
+        function user(){
+            let data=document.getElementById('name').value
+            console.log(data);
+            document.getElementById('heder').innerHTML=data
+
+        }
+        function set(){
+            let input="code step by step"
+           document.getElementById('name').value=input
+        }
+        function Reset()
+        {
+            document.getElementById('name').value=""
+        }
+        function copy()
+        {
+            let copy=document.getElementById('password').value
+            document.getElementById('name').value=copy
+        }
+
+      
+    </script>
+</head>
+<body>
+    <h1 id="heder"> </h1>
+    <input type="text" id="name" placeholder="username">
+    <input type="text" id="password" placeholder="enter your password">
+    <br> <br>
+    <button onclick="user()">get value</button>
+    <button onclick="set()">set value</button>
+    <button onclick="Reset()">reset value</button>
+    <button onclick="copy()">copy</button>
+</body>
+
+
+
+<!-- getElementById() म्हणजे काय?
+getElementById() हा JavaScript method आहे जो HTML मधील specific element (ID वापरून) शोधतो.
+👉 प्रत्येक ID unique असते (एकच element साठी वापरली जाते)
+
+🔸 Syntax (लिहिण्याची पद्धत)
+document.getElementById("id_name");
+
+function showName() {
+  let value = document.getElementById("name").value;
+  document.getElementById("result").innerHTML = value;
+}
+
+👉 Input मधला text paragraph मध्ये दिसेल
+
+
+✔ document म्हणजे पूर्ण webpage
+✔ getElementById() ने element मिळतो
+✔ .innerHTML → content बदलण्यासाठी
+✔ .style → design बदलण्यासाठी
+✔ .value → input value घेण्यासाठी -->

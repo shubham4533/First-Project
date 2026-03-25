@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Filed</title>
+</head>
+<body>
+    <h1>Input Filed Event</h1>
+    <input type="text" onblur="InputfieldEvent(event)" id="name" placeholder="Enter Username">
+    <br>
+    <span style="color: red;" id="user-message"></span>
+    <script>
+        function InputfieldEvent(event){
+            console.log(event.target.value);
+            let val=event.target.value;
+            let validate=document.getElementById('user-message');
+
+            validate.style.display="block"
+            
+            if(val.length<4){
+                validate.textContent="min valid length is 4"
+            }
+            else if (val.length>12){
+                validate.textContent="max valid length is 12"
+            }else{
+                validate.textContent=""
+                validate.style.display="none"
+            }
+            }
+
+    </script>
+</body>
+</html>

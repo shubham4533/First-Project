@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Item List</h1>
+    <span>POSITION</span>
+    <input type="text" name="" id="position" placeholder="Enter position">
+    </BR></BR>
+    <SPAN>VALUE</SPAN>
+    <input type="text" name="" id="Value" placeholder="Enter VALUE">
+    <button onclick="addelement()">SUBMIT</button>
+    <ul id="list">
+
+    </ul>
+    <script>
+    let users=["shubham","sagar","rohan","nitin","divya"];
+    console.log(users);
+    function addelement(){
+        let data=document.getElementById('Value').value;
+        let  num=document.getElementById('position').value;
+        if(num && data){
+            users.splice(num,0,data)
+        }
+        let list=document.getElementById('list');
+        list.innerHTML="";
+        for(let user of users){
+        
+            
+             list.innerHTML+="<li>"+user+"</li>"
+        }
+        
+
+    }
+    
+    
+    </script>
+    
+</body>
+</html>

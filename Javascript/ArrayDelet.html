@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>DELETE ARRAY</h1>
+    <span>DELET ARRAY ITEM</span>
+    <input type="text" onblur="deletitem(event)" id="" placeholder="enter username">
+    <script>
+        let users = ["SHUBHAM", "SAGAR", "NITIN", "SUDHIR"];
+
+        console.log(users);
+
+        users.shift()
+
+        users.pop()
+
+        users.splice(1, 2)
+
+         console.log(users);
+        function deletitem(event) {
+            let pos = event.target.value;
+            if (pos > users.length - 1) {
+                alert("position not valid ")
+            } else {
+                users.splice(pos, 1)
+                console.log(users);
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!-- 1️⃣ pop() (Last element delete)
+
+👉 शेवटचा element remove करतो
+
+let fruits = ["Apple", "Mango", "Banana"];
+
+fruits.pop();
+
+console.log(fruits);
+
+👉 Output: ["Apple", "Mango"]
+
+
+2️⃣ shift() (First element delete)
+
+👉 पहिला element remove करतो
+
+let fruits = ["Apple", "Mango", "Banana"];
+
+fruits.shift();
+
+console.log(fruits);
+
+👉 Output: ["Mango", "Banana"]
+
+
+
+3️⃣ splice() (Specific position delete 🔥)
+
+👉 specific index वरून delete करतो
+
+let fruits = ["Apple", "Mango", "Banana", "Orange"];
+
+// index 1 पासून 1 element delete
+fruits.splice(1, 1);
+
+console.log(fruits);
+
+👉 Output: ["Apple", "Banana", "Orange"]
+
+
+✅ Simple समजून घ्या
+pop → शेवटचा delete
+shift → पहिला delete
+splice → कुठलाही delete -->

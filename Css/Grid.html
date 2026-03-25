@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_css</title>
+    <style>
+        .container{
+            background:#eee;
+            width:700px;
+            /* height: ; */
+            text-align:center;
+            margin:100px 0px 0px 100px;
+
+            display: grid;
+            grid-template-columns:200px 160px auto;
+            /* grid-template-rows:repeat(2,120px); */
+            grid-template-rows:120px 120px;
+            /* grid-row-gap:10px;
+            grid-column-gap:10px; */
+            grid-gap:10px 10px;
+        }
+        .Header{
+            background-color:palegreen;
+            /* positioning of items; */
+             /* grid-row-start:2;
+             grid-row-end:3;
+             grid-column-start:3;
+             grid-column-end:4; */
+            
+             /* ********Shortcut******* */
+             /* grid-row:2/3;
+             grid-column:3/4; */
+
+             grid-area:2/3/3/4;
+                   /* RS/CS/RE/CE */
+
+                /* //overlapping  jr spanning kartana ek item hide zal asel tr overlapping cha use karto*/
+                   z-index:1;
+
+        }
+        .Menu{
+            background-color:pink;
+            /* spanning of row & columns */
+            grid-row:2/span 5;
+            grid-column:1/4;
+
+            
+
+        }
+        .Box1{
+            background-color: aqua;
+            
+          
+        }
+        .Box2{
+            background-color:yellow;
+        }
+        #content{
+            background-color:red;
+            grid-column:1/4;
+        }
+        #Footer{
+            background-color: blue;
+            /* grid-row-start:1;
+            grid-row-end:2;
+            grid-column-start:1;
+            grid-column-end:2; 
+            */
+            grid-area:1/1/2/2;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Header">Header</div>
+        <div class="Menu">Menu</div>
+        <div class="Box1">Box1</div>
+        <div class="Box2">Box2</div>
+        <div id="content">content</div>
+        <div id="Footer">Footer</div>
+    </div>
+</body>

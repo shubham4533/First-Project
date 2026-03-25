@@ -1,0 +1,29 @@
+
+    body {
+    background: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:100px;
+    }
+
+    @media screen and (max-width:1200px) {
+    body {
+    background: yellow;
+    font-size:80px;
+    }
+
+    }
+    @media  screen and (max-width:900px){
+        body{
+            background:palevioletred;
+            font-size:70px;
+        }
+    }
+     @media  screen and (max-width:700px){
+        body{
+            background:black;
+            font-size:40px;
+            color:whitesmoke;
+
+        }
+     }
+    

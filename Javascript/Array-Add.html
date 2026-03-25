@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ADD ELEMENT</h1>
+
+    <span>Add position</span>
+    <input type="text"  name="" id="pos" placeholder="enter position">
+    <br><br>
+    <span>add value</span>
+    <input type="text"  id="value" placeholder="enter value">
+    <br><br>
+    <button onclick="addelement()">submit</button>
+
+    <script>
+    let add=["shubham","sagar","rohan","sudhir"];
+    // console.log(add);
+    // add.push("Divya")
+    // add.unshift("prajakta")
+    // add.splice(1,0,"hema","vrushali")
+    console.log(add);
+
+    function addelement(){
+        let val=document.getElementById('value').value;
+        let pos=document.getElementById('pos').value;
+        add.splice(pos,0,val)
+        console.log(add);
+
+    }
+     </script>
+</body>
+</html>
+
+
+<!-- 
+1️⃣ push() (End ला add 🔥)
+
+👉 array च्या शेवटी element add करतो
+
+let fruits = ["Apple", "Mango"];
+
+fruits.push("Banana");
+
+console.log(fruits);
+
+👉 Output: ["Apple", "Mango", "Banana"]
+
+
+2️⃣ unshift() (Start ला add)
+
+👉 array च्या सुरुवातीला element add करतो
+
+let fruits = ["Apple", "Mango"];
+
+fruits.unshift("Orange");
+
+console.log(fruits);
+
+👉 Output: ["Orange", "Apple", "Mango"]
+
+
+
+3️⃣ splice() (Specific position ला add 🔥)
+
+👉 specific index वर element insert करतो
+
+let fruits = ["Apple", "Mango", "Banana"];
+
+// index 1 वर add करा
+fruits.splice(1, 0, "Orange");
+
+console.log(fruits);
+
+👉 Output: ["Apple", "Orange", "Mango", "Banana"]
+array.splice(index, 0, element);
+
+
+💡 Developer Tip
+Most common → push()
+Specific position → splice()
+Modern React मध्ये → spread वापरतात
+✅ Simple समजून घ्या
+push → शेवटी add
+unshift → सुरुवातीला add
+splice → मध्ये add -->

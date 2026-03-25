@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input Filed</title>
+    <script>
+    function handleoninput(event){
+        console.log(event.target.id);
+     }
+     function handleoninput1(){
+        console.log("handleinput");
+     }
+     function handlekeyup(){
+        console.log("handlekeyup");
+     }
+     function handlekeydown(){
+        console.log("handlekeydown");
+     }
+     function handlefocuson(){
+        console.log("Starting....");
+     }
+     function handleblur(){
+        console.log("stopppp....")
+     }
+    </script>
+</head>
+<body>
+   <h1>INPUT EVENT FIELD</h1>
+   <input type="text"
+    oninput="handleoninput1()"
+    onkeyup="handlekeyup()"
+    onkeydown="handlekeydown()"
+    onfocus="handlefocuson()"
+    onblur="handleblur()"
+    name="" id="" placeholder="username">
+
+    <input type="text"  oninput="handleoninput(event)"  id="age" placeholder="enter age">
+    <input type="text" name="" id="email" oninput="handleoninput(event)" placeholder="enter email">
+</body>
+</html>
